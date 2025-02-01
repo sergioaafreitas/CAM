@@ -1,7 +1,7 @@
 # Machine Learning Course (FGA0083)
 Release: mar/2025
 
-Welcome to the Machine Learning Course repository for the 2024/1 semester, taught by Dr. Sergio Antônio Andrade de Freitas. This repository serves as a central hub for course materials, projects, and assignments related to FGA0083 at the University of Brasília.
+Welcome to the Machine Learning Course repository, created by Dr. Sergio Antônio Andrade de Freitas. This repository serves as a central hub for course materials, projects, and assignments related to FGA0083 at the University of Brasília.
 
 ## Course Overview
 
