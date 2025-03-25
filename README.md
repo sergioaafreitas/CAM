@@ -1,37 +1,130 @@
-# Machine Learning Course (FGA0083)
-Release: mar/2025
+# Machine Learning Course (FGA0083)  
+Release: Mar/2025  
 
-Welcome to the Machine Learning Course repository, created by Dr. Sergio Antônio Andrade de Freitas. This repository serves as a central hub for course materials, projects, and assignments related to FGA0083 at the University of Brasília.
+Este repositório contém o material da disciplina **Aprendizado de Máquina 1 (FGA0083)** da Universidade de Brasília, ministrada pelo Prof. Dr. Sergio Antônio Andrade de Freitas.  
 
-## Course Overview
+## 📘 Visão Geral da Disciplina
 
-This course aims to equip students with a solid understanding and practical skills in machine learning, focusing on pattern recognition through regression, classification, unsupervised learning techniques, Support Vector Machines, and Neural Networks. By integrating theoretical knowledge with hands-on experience, the course prepares students to apply machine learning algorithms to real-world problems.
+A disciplina busca capacitar os estudantes a compreender, aplicar e adaptar métodos de aprendizado de máquina. O conteúdo combina fundamentos teóricos e práticos de regressão, classificação, aprendizado não supervisionado, SVMs, redes neurais e introdução a transformers e LLMs.
 
-### Key Learning Outcomes
+### ✳️ Resultados de Aprendizagem Esperados
 
-- Understand machine learning concepts and techniques
-- Apply machine learning techniques to practical problems
-- Evaluate and adapt machine learning algorithms to various contexts
+- Compreender os principais conceitos e técnicas de aprendizado de máquina.
+- Aplicar métodos supervisionados e não supervisionados para resolver problemas reais.
+- Avaliar, adaptar e comparar algoritmos em diferentes contextos.
+- Desenvolver soluções práticas por meio de projetos em grupo com abordagem PBL.
 
-## Course Methodology
+## 🧠 Metodologia
 
-The course adopts a Project-Based Learning (PBL) approach, encouraging students to work in groups on projects that apply machine learning concepts. Individual quizzes and mini-projects supplement learning, reinforcing concepts through practical application. The use of Scrum methodology is recommended for project management.
+A disciplina utiliza **Aprendizagem Baseada em Projetos (PBL)**. Os estudantes formam grupos para resolver problemas reais com técnicas de ML, combinando teoria e prática.  
 
-## Evaluation Criteria
+Outros instrumentos de avaliação:
+- Mini-Trabalhos (MinT)
+- Projetos (PBL1, PBL2 e PBL3)
+- Avaliações 360°
+- Participação colaborativa
 
-Student performance is assessed through a combination of individual quizzes, team-based mini-projects, and a semester-long project. Participation, collaboration, and practical application of machine learning techniques are key components of the evaluation.
+## 🧪 Requisitos Técnicos
 
-## Requirements
+Certifique-se de ter o Python 3.10 ou superior instalado.
 
-For this course, you will need the following Python libraries:
+### 📦 Bibliotecas Python utilizadas
 
-- **scikit-learn**: A versatile library providing simple and efficient tools for data mining and data analysis; ideal for implementing machine learning algorithms.
-- **tensorflow**: An open-source platform for machine learning, offering comprehensive tools and libraries to enable deep learning and neural network development.
-- **matplotlib**: A plotting library for creating static, interactive, and animated visualizations in Python.
-- **pandas**: Essential for data manipulation and analysis, offering data structures and operations for manipulating numerical tables and time series.
-- **numpy**: The fundamental package for scientific computing with Python, supporting large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.
-- **Pyarrow**: A cross-language development platform for in-memory data, facilitating high-performance data exchange and storage solutions.
+```bash
+pip install -r requirements.txt
+```
 
-## Contact
+**`requirements.txt`:**
+```txt
+scikit-learn
+pandas
+numpy
+matplotlib
+tensorflow
+pyarrow
+```
 
-For any inquiries, please contact Dr. Sergio Antônio Andrade de Freitas at sergiofreitas@unb.br.
+Outras bibliotecas frequentemente utilizadas:
+- seaborn
+- scipy
+- keras
+- pytorch (opcional)
+- mlflow (para versionamento de experimentos)
+
+## ⚙️ Ambiente de Desenvolvimento
+
+Você pode usar os seguintes ambientes:
+
+### Ambiente Local
+- [Jupyter Notebook](https://jupyter.org/)
+- [VS Code + Python Extension](https://code.visualstudio.com/)
+- [PyCharm](https://www.jetbrains.com/pycharm/)
+- [Anaconda + Spyder](https://www.anaconda.com/)
+
+### Ambiente Remoto
+- [Google Colab](https://colab.research.google.com/)
+- [Kaggle Kernels](https://www.kaggle.com/kernels)
+- [AWS SageMaker](https://aws.amazon.com/sagemaker/)
+- [Azure ML Studio](https://azure.microsoft.com/en-us/products/machine-learning/)
+
+## ▶️ Executando os Notebooks
+
+Os arquivos `.ipynb` estão numerados conforme o conteúdo didático (por exemplo, `03 - Regressão - Introdução`, `11.0 - SVM`, `14.0 - K-means`). Para executá-los:
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/sergioaafreitas/CAM.git
+cd CAM
+```
+
+2. Crie um ambiente virtual:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate      # Windows
+```
+
+3. Instale os pacotes necessários:
+```bash
+pip install -r requirements.txt
+```
+
+4. Inicie o Jupyter:
+```bash
+jupyter notebook
+```
+
+## 📂 Estrutura do Repositório
+
+```
+├── 01 - Introdução ao Aprendizado de Máquina.pptx
+├── 02 - Conceitos básicos e ambiente de desenvolvimento.pptx
+├── 03 - Regressão - Introdução.pptx
+├── 5.x, 6.x, 7.x, ... (Notebooks com exemplos de regressão, classificação, SVM, etc.)
+├── glossario.pdf
+├── guia_projetos_ml.pdf
+├── plano_de_ensino.pdf
+├── requirements.txt
+└── README.md
+```
+
+## 📚 Referências Bibliográficas
+
+- Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*.
+- Abu-Mostafa, Y. S. et al. (2012). *Learning from Data*.
+- Mitchell, T. (1997). *Machine Learning*.
+- Géron, A. (2023). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*.
+- Sicsú, A. L. et al. (2023). *Técnicas de machine learning*.
+- Vaswani et al. (2017). *Attention Is All You Need*.
+- Outras no plano de ensino (vide plano de ensino).
+
+## 👨‍🏫 Contato
+
+Prof. Dr. Sergio Antônio Andrade de Freitas  
+📧 sergiofreitas@unb.br  
+🔗 [Lattes](http://lattes.cnpq.br/0395549254894676)  
+🌐 [CEDIS - UnB](https://cedis.unb.br)
+
+## 📢 Observação
+
+Todos os projetos devem seguir as diretrizes de entrega descritas no plano de ensino. As submissões dos Mini-Trabalhos e checkpoints PBL devem ser realizadas via Microsoft Teams da disciplina.
