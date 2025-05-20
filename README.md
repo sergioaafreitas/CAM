@@ -94,6 +94,14 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
+## 🧪 Executando os testes
+
+Os testes unitários utilizam `pytest`. Após instalar as dependências, basta executar:
+
+```bash
+pytest
+```
+
 ## 📂 Estrutura do Repositório
 
 ```
