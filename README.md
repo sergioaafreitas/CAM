@@ -1,7 +1,7 @@
 # Machine Learning Course (FGA0083)  
 Release: Mar/2025  
 
-Este repositório contém o material da disciplina **Aprendizado de Máquina 1 (FGA0083)** da Universidade de Brasília, ministrada pelo Prof. Dr. Sergio Antônio Andrade de Freitas.  
+Este repositório contém o material da disciplina **Aprendizado de Máquina (FGA0083)** da Universidade de Brasília, ministrada pelo Prof. Dr. Sergio Antônio Andrade de Freitas.  
 
 ## 📘 Visão Geral da Disciplina
 
