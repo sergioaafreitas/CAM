@@ -2,6 +2,8 @@ scikit-learn
 pandas
 numpy
 matplotlib
+seaborn
+minisom
 tensorflow
 pyarrow
 pytest

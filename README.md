@@ -40,12 +40,13 @@ scikit-learn
 pandas
 numpy
 matplotlib
+seaborn
+minisom
 tensorflow
 pyarrow
 ```
 
 Outras bibliotecas frequentemente utilizadas:
-- seaborn
 - scipy
 - keras
 - pytorch (opcional)
@@ -88,6 +89,8 @@ source .venv/bin/activate  # Linux/macOS
 ```bash
 pip install -r requirements.txt
 ```
+
+Os notebooks que leem arquivos CSV locais foram preparados para funcionar tanto com o diretório atual na raiz do repositório quanto dentro de `src/`.
 
 4. Inicie o Jupyter:
 ```bash
