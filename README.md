@@ -1,5 +1,5 @@
 # Machine Learning Course (FGA0083)  
-Release: Mar/2025  
+Revisão didática: out/2026
 
 Este repositório contém o material da disciplina **Aprendizado de Máquina (FGA0083)** da Universidade de Brasília, ministrada pelo Prof. Dr. Sergio Antônio Andrade de Freitas.  
 
@@ -44,6 +44,8 @@ seaborn
 minisom
 tensorflow
 pyarrow
+pytest
+notebook
 ```
 
 Outras bibliotecas frequentemente utilizadas:
@@ -70,7 +72,7 @@ Você pode usar os seguintes ambientes:
 
 ## ▶️ Executando os Notebooks
 
-Os arquivos `.ipynb` estão numerados conforme o conteúdo didático (por exemplo, `03 - Regressão - Introdução`, `11.0 - SVM`, `14.0 - K-means`). Para executá-los:
+Os 29 arquivos `.ipynb` estão em `src/`. Seus nomes originais foram preservados. Para executá-los:
 
 1. Clone este repositório:
 ```bash
@@ -90,7 +92,7 @@ source .venv/bin/activate  # Linux/macOS
 pip install -r requirements.txt
 ```
 
-Os notebooks que leem arquivos CSV locais foram preparados para funcionar tanto com o diretório atual na raiz do repositório quanto dentro de `src/`.
+Os notebooks que leem arquivos locais procuram `data/` tanto a partir da raiz do repositório quanto de `src/`.
 
 4. Inicie o Jupyter:
 ```bash
@@ -105,19 +107,24 @@ Os testes unitários utilizam `pytest`. Após instalar as dependências, basta e
 pytest
 ```
 
-## 📂 Estrutura do Repositório
+## 📂 Roteiro dos exemplos
 
-```
-├── 01 - Introdução ao Aprendizado de Máquina.pptx
-├── 02 - Conceitos básicos e ambiente de desenvolvimento.pptx
-├── 03 - Regressão - Introdução.pptx
-├── 5.x, 6.x, 7.x, ... (Notebooks com exemplos de regressão, classificação, SVM, etc.)
-├── glossario.pdf
-├── guia_projetos_ml.pdf
-├── plano_de_ensino.pdf
-├── requirements.txt
-└── README.md
-```
+| Etapa | Notebooks em `src/` | Questão principal |
+| --- | --- | --- |
+| Regressão linear | `3.0`, `4.0`, `5.0`, `5.1`, `5.2` | O que significam coeficientes, resíduos, extrapolação e multicolinearidade? |
+| Regularização e regressão não linear | `5.3`, os dois `6.0`, `7.0` | Como regularização e escolha de kernel afetam ajuste e erro fora do treino? |
+| Classificação básica | `8.0`, `8.1`, `9.0`, `10.0` | Como interpretar probabilidades, erros por classe e protótipos? |
+| SVM e projeção | os quatro `11.0` | Como margem, kernel e redução de dimensão mudam o que se vê? |
+| Avaliação e seleção | os três `12.0` | Qual métrica responde à pergunta e como evitar vazamento na validação? |
+| Redução de dimensão | `13.0` PCA, `13.0` LDA, `13.1` | Qual a diferença entre projeção supervisionada e não supervisionada? |
+| Agrupamento | os dois `14.0`, `14.1`, `14.2`, `16.0` | Como escolher grupos, interpretar probabilidades e escalas? |
+| Rede neural | `17.0` | A MLP melhora uma linha de base simples? |
+
+Cada notebook identifica o autor, apresenta objetivo, pergunta-guia, interpretação, limite e exercício. Execute primeiro o exemplo; em seguida, altere um parâmetro ou conjunto de dados, registre uma métrica e explique o que a evidência sustenta. Figuras ajustadas com todos os dados servem para explorar padrões e não substituem avaliação em teste.
+
+Dez conjuntos de dados em `data/` estão reservados como extensões nos exercícios: `4.1`, `4.2`, `6.1`, `7.1`, `7.2`, `9.1`, `10.1`, `11.1`, `11.2` e `12.1`. Inspecione colunas, unidades, alvo e valores ausentes antes de modelar. O arquivo `12.1 - dados_comentarios.csv` pode servir a uma atividade nova sobre representação de texto e avaliação de classificação.
+
+**Autor dos notebooks:** Prof. Dr. Sergio Antônio Andrade de Freitas. A autoria aparece no início e nos metadados de cada notebook.
 
 ## 📚 Referências Bibliográficas
 
